@@ -14,5 +14,8 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
 Plug 'tpope/vim-sensible'
 
+" colorscheme
+Plug 'flazz/vim-colorschemes'
+
 " Initialize plugin system
 call plug#end()
