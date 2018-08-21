@@ -17,5 +17,8 @@ Plug 'tpope/vim-sensible'
 " colorscheme
 Plug 'flazz/vim-colorschemes'
 
+" status line
+Plug 'itchyny/lightline.vim'
+
 " Initialize plugin system
 call plug#end()
