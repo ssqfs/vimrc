@@ -16,6 +16,8 @@ Plug 'tpope/vim-sensible'
 
 " colorscheme
 Plug 'flazz/vim-colorschemes'
+Plug 'felixhummel/setcolors.vim'
+Plug 'liuchengxu/space-vim-dark'
 
 " status line
 Plug 'itchyny/lightline.vim'

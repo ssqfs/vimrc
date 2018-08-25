@@ -133,8 +133,10 @@ syntax enable
 
 " Enable 256 colors palette
 set t_Co=256
-colorscheme solarized
-set background=dark
+colorscheme space-vim-dark
+set termguicolors
+hi LineNr ctermbg=NONE guibg=NONE
+"set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
