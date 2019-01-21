@@ -16,8 +16,51 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-source ~/.vim/vim-plug.vim
-source ~/.vim/plugins_config.vim
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin list
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Tagbar
+Plug 'majutsushi/tagbar' " brew install ctags for mac
+
+" Comment code
+Plug 'scrooloose/nerdcommenter'
+
+" Using a non-master branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Highlight trailing whitespace
+Plug 'bronson/vim-trailing-whitespace'
+
+" File search
+Plug 'ctrlpvim/ctrlp.vim'
+
+" colorscheme
+Plug 'flazz/vim-colorschemes'
+Plug 'liuchengxu/space-vim-dark'
+
+" status line
+Plug 'itchyny/lightline.vim'
+
+" highlight parentheses
+Plug 'kien/rainbow_parentheses.vim'
+
+" auto-completion for quotes, parens, brackets, etc
+Plug 'Raimondi/delimitMate'
+
+" toggle, display and navigate marks
+Plug 'kshenoy/vim-signature'
+
+" motions on speed
+Plug 'easymotion/vim-easymotion'
+
+" Initialize plugin system
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -319,6 +362,10 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+source ~/.vim/plugins_config.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -372,3 +419,4 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
